@@ -1,0 +1,57 @@
+.contact-container {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.contact-hero {
+  background: linear-gradient(to right, #fbbf24, #f59e0b);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.contact-form,
+.contact-info {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #f59e0b;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #d97706;
+}

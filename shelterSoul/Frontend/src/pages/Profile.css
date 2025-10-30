@@ -1,0 +1,193 @@
+.profile {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ---------- Header ---------- */
+.profile-header {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #e3f2fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+}
+
+.profile-info h1 {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 0.25rem;
+}
+
+.profile-role {
+  color: #0077cc;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.profile-member-since {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* ---------- Tabs ---------- */
+.profile-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 0.7rem 1.4rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #f2f8ff;
+  color: #0077cc;
+}
+
+.tab.active {
+  background-color: #0077cc;
+  color: white;
+  border-color: #0077cc;
+}
+
+/* ---------- Profile Details ---------- */
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.details-card,
+.favorites-card,
+.adoption-requests {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 2rem;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ---------- Favorites ---------- */
+.favorites-card .favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.favorite-pet {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.favorite-pet:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.favorite-pet img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 2px solid #eee;
+}
+
+.favorite-pet .pet-info {
+  text-align: center;
+  padding: 0.75rem 1rem;
+}
+
+.favorite-pet h3 {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 0.25rem;
+}
+
+.favorite-pet p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* ---------- Adoption Requests ---------- */
+.request-card {
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.25s ease;
+}
+
+.request-card:hover {
+  transform: translateY(-3px);
+}
+
+.request-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.request-header img {
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* ---------- Loading ---------- */
+.loading-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #ddd;
+  border-top: 4px solid #0077cc;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

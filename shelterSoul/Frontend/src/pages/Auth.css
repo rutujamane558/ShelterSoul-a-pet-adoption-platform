@@ -1,0 +1,188 @@
+/* ===== Auth Container ===== */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  padding: 20px;
+}
+
+/* ===== Auth Card ===== */
+.auth-card {
+  background: #fff;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ===== Header ===== */
+.auth-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.auth-header h1 {
+  font-size: 1.8rem;
+  color: #0072ff;
+  margin-bottom: 10px;
+}
+
+.auth-header p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* ===== Error Message ===== */
+.error-message {
+  background-color: #ffe5e5;
+  color: #d93025;
+  border: 1px solid #f5bcbc;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* ===== Form ===== */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== Input Group ===== */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #0072ff;
+}
+
+/* Password toggle icon */
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  padding: 5px;
+}
+
+.password-toggle:hover {
+  color: #0072ff;
+}
+
+/* ===== Button ===== */
+.btn-primary {
+  background: #0072ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #005ce6;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* ===== Footer ===== */
+.auth-footer {
+  text-align: center;
+  margin-top: 25px;
+  color: #555;
+}
+
+.auth-footer a {
+  color: #0072ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Demo Section ===== */
+.demo-accounts {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.demo-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.btn-outline {
+  border: 1px solid #0072ff;
+  background: transparent;
+  color: #0072ff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #0072ff;
+  color: white;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 25px;
+  }
+}

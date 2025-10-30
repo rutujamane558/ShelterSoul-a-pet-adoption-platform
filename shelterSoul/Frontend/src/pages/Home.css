@@ -1,0 +1,194 @@
+/* ====== Home Page Styles ====== */
+
+.home {
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+
+.hero {
+  background: linear-gradient(120deg, #0077cc, #66ccff);
+  color: white;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #f3f3f3;
+}
+
+.hero .btn {
+  background-color: white;
+  color: #0077cc;
+  border: none;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #f3f3f3;
+  transform: scale(1.05);
+}
+
+/* Section headings */
+.section-header {
+  text-align: center;
+  margin: 3rem 0 1rem;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.section-header p {
+  color: #666;
+}
+
+/* Pet cards grid */
+.pets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1.5rem 3rem;
+}
+
+.pet-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+}
+
+.pet-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+.pet-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.pet-card-content {
+  padding: 1rem;
+}
+
+.pet-card-content h3 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 0.3rem;
+}
+
+.pet-card-content p {
+  color: #666;
+  margin-bottom: 0.8rem;
+}
+
+.pet-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.pet-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pet-card .btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  background-color: #0077cc;
+  color: white;
+  padding: 0.6rem 0;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.pet-card .btn:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .pets-grid {
+    padding: 0 1rem 2rem;
+  }
+}
+/* ===== Stats Section ===== */
+.stats {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.stats .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.stat-card {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 20px 30px;
+  width: 220px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  background-color: #fff;
+}
+
+.stat-icon {
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+.stat-card h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+.stat-card p {
+  color: #555;
+  font-size: 1rem;
+}

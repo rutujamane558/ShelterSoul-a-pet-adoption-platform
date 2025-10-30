@@ -1,0 +1,23 @@
+{
+  "name": "shelter-soul",
+  "version": "1.0.0",
+  "description": "Shelter Soul pet adoption platform",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix shelterSoul/Frontend",
+    "build": "npm run build --prefix shelterSoul/Frontend",
+    "preview": "npm run preview --prefix shelterSoul/Frontend",
+    "install:frontend": "npm install --prefix shelterSoul/Frontend",
+    "install:backend": "npm install --prefix shelterSoul/Backend",
+    "install:all": "npm run install:frontend && npm run install:backend",
+    "backend:dev": "npm run dev --prefix shelterSoul/Backend",
+    "backend:start": "npm run start --prefix shelterSoul/Backend"
+  },
+  "keywords": [
+    "pet",
+    "adoption",
+    "shelter"
+  ],
+  "author": "Shelter Soul Team",
+  "license": "MIT"
+}
