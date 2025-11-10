@@ -1,0 +1,148 @@
+/* ===== General Navbar Layout ===== */
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 3px solid #1e90ff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* ===== Logo ===== */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff6600;
+  text-decoration: none;
+}
+
+.nav-logo .logo-icon {
+  color: #ff6600;
+  width: 28px;
+  height: 28px;
+}
+
+/* ===== Menu Section ===== */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff6600;
+}
+
+/* Active link */
+.nav-link.active {
+  color: #ff6600;
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: #ff6600;
+  border-radius: 3px;
+}
+
+/* ===== Admin, Logout, Buttons ===== */
+.admin-link {
+  color: #007bff;
+}
+
+.admin-link:hover {
+  color: #0056b3;
+}
+
+.logout-btn {
+  border: none;
+  background: none;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.logout-btn:hover {
+  color: #ff6600;
+}
+
+/* ===== Register / Login Buttons ===== */
+.register-btn {
+  background-color: #ff6600;
+  color: #fff !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #e65c00;
+}
+
+/* ===== Mobile Menu Toggle ===== */
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+  color: #333;
+}
+
+/* ===== Responsive Styling ===== */
+@media screen and (max-width: 992px) {
+  .nav-container {
+    padding: 15px 25px;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-top: 2px solid #1e90ff;
+    gap: 20px;
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
